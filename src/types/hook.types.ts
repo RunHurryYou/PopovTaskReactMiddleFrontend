@@ -1,17 +1,17 @@
-interface IRefetchParams {
+export interface IRefetchParams {
   params: {
-    _limit: number;
+    _limit?: number;
   };
 }
 
-interface IRefecthData{
+export interface IRefetchData{
     id: number,
     title: string
 }
 
 export interface IUseFetch {
-    data: IRefecthData[],
+    data: IRefetchData[],
     isLoading: boolean,
     error: boolean,
-    refetch: (options: IRefetchParams) => void
+    refetch: (options?: IRefetchParams) => void
 }

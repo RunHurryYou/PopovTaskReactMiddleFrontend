@@ -20,7 +20,7 @@ function Task1() {
                 </button>
             </div>
             {isLoading && 'Загрузка...'}
-            {error && 'Произошла ошибка'}
+            {error && !isLoading && 'Произошла ошибка'}
             {data && !isLoading && !error && data.map(item => <div key={item.id}>{item.title}</div>)}
         </div>
     );
