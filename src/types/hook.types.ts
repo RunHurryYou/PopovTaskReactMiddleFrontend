@@ -34,3 +34,8 @@ export interface IUseWindowOptions{
   once: boolean,
   signal: AbortSignal
 }
+
+export type IUseWindowScroll = [
+        { x: number, y: number },
+        ({ x, y }: { x?: number, y?: number }) => void
+]
