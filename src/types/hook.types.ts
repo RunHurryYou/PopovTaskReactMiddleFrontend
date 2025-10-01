@@ -1,3 +1,5 @@
+import type { Ref } from "react";
+
 export interface IRefetchParams {
   params: {
     _limit?: number;
@@ -20,3 +22,8 @@ export type IUseLocalStorage = [
         value: string,
         functions: {setItem: (value: string) => void, removeItem: () => void}
 ]
+
+export interface IUseHovered {
+    hovered: boolean,
+    ref: Ref<HTMLDivElement> | Ref<null>
+}
