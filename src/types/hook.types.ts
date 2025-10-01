@@ -15,3 +15,8 @@ export interface IUseFetch {
     error: boolean,
     refetch: (options?: IRefetchParams) => void
 }
+
+export type IUseLocalStorage = [
+        value: string,
+        functions: {setItem: (value: string) => void, removeItem: () => void}
+]
