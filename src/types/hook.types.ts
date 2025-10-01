@@ -27,3 +27,10 @@ export interface IUseHovered {
     hovered: boolean,
     ref: Ref<HTMLDivElement> | Ref<null>
 }
+
+export interface IUseWindowOptions{
+  capture: boolean,
+  passive: boolean,
+  once: boolean,
+  signal: AbortSignal
+}
