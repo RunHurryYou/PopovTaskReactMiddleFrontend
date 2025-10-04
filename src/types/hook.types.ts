@@ -39,3 +39,8 @@ export type IUseWindowScroll = [
         { x: number, y: number },
         ({ x, y }: { x?: number, y?: number }) => void
 ]
+
+export type IUseToggle<T> = [
+        value: T,
+        toggle: (value?: T) => void
+];

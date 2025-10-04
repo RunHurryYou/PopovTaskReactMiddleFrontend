@@ -1,6 +1,6 @@
 import { useWindowScroll } from '../../hooks/useWindowScroll';
 
-function Task4() {
+function AddTask1() {
   const [scroll, scrollTo] = useWindowScroll();
 
   return (
@@ -13,4 +13,4 @@ function Task4() {
   );
 }
 
-export default Task4;
+export default AddTask1;
